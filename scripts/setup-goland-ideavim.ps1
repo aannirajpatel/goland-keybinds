@@ -64,6 +64,16 @@ map <leader>w <Action>(CloseEditor)
 map <leader>p <Action>(GotoFile)
 map <leader>e <Action>(SearchEverywhere)
 
+" Explicit Space mappings avoid any leader-expansion ambiguity in IdeaVim.
+map <Space>s <Action>(FileStructurePopup)
+map <Space>h <Action>(TypeHierarchy)
+map <Space>u <Action>(FindUsages)
+map <Space>r <Action>(RenameElement)
+map <Space>t <Action>(ActivateTerminalToolWindow)
+map <Space>w <Action>(CloseEditor)
+map <Space>p <Action>(GotoFile)
+map <Space>e <Action>(SearchEverywhere)
+
 " Discover method-navigation action IDs in your GoLand build:
 "   :actionlist method
 " Then add, for example:
