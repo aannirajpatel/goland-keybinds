@@ -44,51 +44,50 @@ if (Test-Path -LiteralPath $snippetPath) {
 
 $snippet = @'
 " GoLand + IdeaVim cross-platform mappings.
+" Use nmap with <Action>(...) because IdeaVim does not support <Action> with noremap.
 let mapleader = " "
 
 " Semantic navigation
-map gd <Action>(GotoDeclaration)
-map gi <Action>(GotoImplementation)
-map <C-o> <Action>(Back)
-map <C-i> <Action>(Forward)
+nmap gd <Action>(GotoDeclaration)
+nmap gi <Action>(GotoImplementation)
+nmap <C-o> <Action>(Back)
+nmap <C-i> <Action>(Forward)
 
 " Inspect code shape / hierarchy
-map <leader>s <Action>(FileStructurePopup)
-map <leader>h <Action>(TypeHierarchy)
+nmap <leader>s <Action>(FileStructurePopup)
+nmap <leader>h <Action>(TypeHierarchy)
 
 " Common IDE workflows
-map <leader>u <Action>(FindUsages)
-map <leader>r <Action>(RenameElement)
-map <leader>t <Action>(ActivateTerminalToolWindow)
-map <leader>w <Action>(CloseEditor)
-map <leader>p <Action>(GotoFile)
-map <leader>e <Action>(SearchEverywhere)
+nmap <leader>u <Action>(FindUsages)
+nmap <leader>r <Action>(RenameElement)
+nmap <leader>t <Action>(ActivateTerminalToolWindow)
+nmap <leader>w <Action>(CloseEditor)
+nmap <leader>p <Action>(GotoFile)
+nmap <leader>e <Action>(SearchEverywhere)
 
-" Explicit Space mappings avoid any leader-expansion ambiguity in IdeaVim.
-map <Space>s (FileStructurePopup)
-map <Space>h (TypeHierarchy)
-map <Space>u (FindUsages)
-map <Space>r (RenameElement)
-map <Space>t (ActivateTerminalToolWindow)
-map <Space>w (CloseEditor)
-map <Space>p (GotoFile)
-map <Space>e (SearchEverywhere)
+" Explicit Space mappings.
+nmap <Space>s <Action>(FileStructurePopup)
+nmap <Space>h <Action>(TypeHierarchy)
+nmap <Space>u <Action>(FindUsages)
+nmap <Space>r <Action>(RenameElement)
+nmap <Space>t <Action>(ActivateTerminalToolWindow)
+nmap <Space>w <Action>(CloseEditor)
+nmap <Space>p <Action>(GotoFile)
+nmap <Space>e <Action>(SearchEverywhere)
 
-" Backslash mappings match Vim's default leader style.
-map \s (FileStructurePopup)
-map \h (TypeHierarchy)
-map \u (FindUsages)
-map \r (RenameElement)
-map \t (ActivateTerminalToolWindow)
-map \w (CloseEditor)
-map \p (GotoFile)
-map \e (SearchEverywhere)
+" Explicit backslash mappings.
+nmap <Bslash>s <Action>(FileStructurePopup)
+nmap <Bslash>h <Action>(TypeHierarchy)
+nmap <Bslash>u <Action>(FindUsages)
+nmap <Bslash>r <Action>(RenameElement)
+nmap <Bslash>t <Action>(ActivateTerminalToolWindow)
+nmap <Bslash>w <Action>(CloseEditor)
+nmap <Bslash>p <Action>(GotoFile)
+nmap <Bslash>e <Action>(SearchEverywhere)
 
-" Discover method-navigation action IDs in your GoLand build:
+" Discover action IDs in your GoLand build:
+"   :actionlist close
 "   :actionlist method
-" Then add, for example:
-"   map ]m <Action>(YourExactActionId)
-"   map [m <Action>(YourExactActionId)
 '@
 
 Set-Content -LiteralPath $snippetPath -Value $snippet -Encoding utf8
