@@ -2,7 +2,7 @@
 
 Small GoLand + IdeaVim setup for people switching between Windows and macOS.
 
-It keeps OS-level shortcuts native, then puts GoLand code navigation behind portable IdeaVim mappings. The scripts map both `<leader>` and explicit `<Space>` forms so `Space w` works even if leader expansion is not behaving in a local IdeaVim build:
+It keeps OS-level shortcuts native, then puts GoLand code navigation behind portable IdeaVim mappings. The scripts map both `<leader>` and explicit `<Space>` forms so `Space w` works even if leader expansion is not behaving in a local IdeaVim build.
 
 - `Space s`: file structure
 - `Space h`: type hierarchy
@@ -16,6 +16,8 @@ It keeps OS-level shortcuts native, then puts GoLand code navigation behind port
 - `gi`: implementation
 - `Ctrl-o`: back
 - `Ctrl-i`: forward
+
+The same commands are also mapped with a backslash prefix, such as `\w`, `\p`, and `\e`, because that matches Vim's default leader style.
 
 ## Windows
 
@@ -45,6 +47,6 @@ Create a custom keymap in GoLand and bind these application-level shortcuts:
 | Back | `Alt+Left` | `Cmd+[` |
 | Forward | `Alt+Right` | `Cmd+]` |
 
-Leave `Ctrl+W` with Vim so it remains the Vim window-command prefix. Use `Space w` to close the active editor tab.
+Leave `Ctrl+W` with Vim so it remains the Vim window-command prefix. Use `Space w` or `\w` to close the active editor tab.
 
 The scripts intentionally do not edit GoLand keymap XML or install plugins.

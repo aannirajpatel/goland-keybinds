@@ -65,14 +65,24 @@ map <leader>p <Action>(GotoFile)
 map <leader>e <Action>(SearchEverywhere)
 
 " Explicit Space mappings avoid any leader-expansion ambiguity in IdeaVim.
-map <Space>s <Action>(FileStructurePopup)
-map <Space>h <Action>(TypeHierarchy)
-map <Space>u <Action>(FindUsages)
-map <Space>r <Action>(RenameElement)
-map <Space>t <Action>(ActivateTerminalToolWindow)
-map <Space>w <Action>(CloseEditor)
-map <Space>p <Action>(GotoFile)
-map <Space>e <Action>(SearchEverywhere)
+map <Space>s (FileStructurePopup)
+map <Space>h (TypeHierarchy)
+map <Space>u (FindUsages)
+map <Space>r (RenameElement)
+map <Space>t (ActivateTerminalToolWindow)
+map <Space>w (CloseEditor)
+map <Space>p (GotoFile)
+map <Space>e (SearchEverywhere)
+
+" Backslash mappings match Vim's default leader style.
+map \s (FileStructurePopup)
+map \h (TypeHierarchy)
+map \u (FindUsages)
+map \r (RenameElement)
+map \t (ActivateTerminalToolWindow)
+map \w (CloseEditor)
+map \p (GotoFile)
+map \e (SearchEverywhere)
 
 " Discover method-navigation action IDs in your GoLand build:
 "   :actionlist method
