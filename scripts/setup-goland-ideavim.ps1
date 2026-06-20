@@ -65,6 +65,7 @@ nmap <leader>t <Action>(ActivateTerminalToolWindow)
 nmap <leader>w <Action>(CloseEditor)
 nmap <leader>p <Action>(GotoFile)
 nmap <leader>e <Action>(SearchEverywhere)
+nmap <leader>1 <Action>(ActivateProjectToolWindow)
 
 " Explicit Space mappings.
 nmap <Space>s <Action>(FileStructurePopup)
@@ -75,6 +76,7 @@ nmap <Space>t <Action>(ActivateTerminalToolWindow)
 nmap <Space>w <Action>(CloseEditor)
 nmap <Space>p <Action>(GotoFile)
 nmap <Space>e <Action>(SearchEverywhere)
+nmap <Space>1 <Action>(ActivateProjectToolWindow)
 
 " Explicit backslash mappings.
 nmap <Bslash>s <Action>(FileStructurePopup)
@@ -85,6 +87,7 @@ nmap <Bslash>t <Action>(ActivateTerminalToolWindow)
 nmap <Bslash>w <Action>(CloseEditor)
 nmap <Bslash>p <Action>(GotoFile)
 nmap <Bslash>e <Action>(SearchEverywhere)
+nmap <Bslash>1 <Action>(ActivateProjectToolWindow)
 
 " Discover action IDs in your GoLand build:
 "   :actionlist close
