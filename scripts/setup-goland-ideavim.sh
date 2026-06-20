@@ -31,6 +31,7 @@ let mapleader = " "
 map gd <Action>(GotoDeclaration)
 map gi <Action>(GotoImplementation)
 map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
 
 " Inspect code shape / hierarchy
 map <leader>s <Action>(FileStructurePopup)
@@ -39,6 +40,10 @@ map <leader>h <Action>(TypeHierarchy)
 " Common IDE workflows
 map <leader>u <Action>(FindUsages)
 map <leader>r <Action>(RenameElement)
+map <leader>t <Action>(ActivateTerminalToolWindow)
+map <leader>w <Action>(CloseEditor)
+map <leader>p <Action>(GotoFile)
+map <leader>e <Action>(SearchEverywhere)
 
 " Discover method-navigation action IDs in your GoLand build:
 "   :actionlist method

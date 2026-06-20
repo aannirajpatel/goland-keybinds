@@ -8,9 +8,14 @@ It keeps OS-level shortcuts native, then puts GoLand code navigation behind port
 - `Space h`: type hierarchy
 - `Space u`: find usages
 - `Space r`: rename
+- `Space t`: terminal
+- `Space w`: close editor tab
+- `Space p`: go to file/path
+- `Space e`: search everywhere
 - `gd`: declaration
 - `gi`: implementation
 - `Ctrl-o`: back
+- `Ctrl-i`: forward
 
 ## Windows
 
@@ -37,8 +42,9 @@ Create a custom keymap in GoLand and bind these application-level shortcuts:
 | Action | Windows | macOS |
 | --- | --- | --- |
 | Show Settings | `Ctrl+,` | `Cmd+,` |
-| Close Active Editor | `Ctrl+W` | `Cmd+W` |
 | Back | `Alt+Left` | `Cmd+[` |
 | Forward | `Alt+Right` | `Cmd+]` |
+
+Leave `Ctrl+W` with Vim so it remains the Vim window-command prefix. Use `Space w` to close the active editor tab.
 
 The scripts intentionally do not edit GoLand keymap XML or install plugins.
