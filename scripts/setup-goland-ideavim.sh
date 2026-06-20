@@ -33,6 +33,7 @@ nmap gd <Action>(GotoDeclaration)
 nmap gi <Action>(GotoImplementation)
 nmap <C-o> <Action>(Back)
 nmap <C-i> <Action>(Forward)
+nmap <C-g> <Action>(EditorEscape)
 
 " Inspect code shape / hierarchy
 nmap <leader>s <Action>(FileStructurePopup)

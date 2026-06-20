@@ -16,6 +16,7 @@ It keeps OS-level shortcuts native, then puts GoLand code navigation behind port
 - `gi`: implementation
 - `Ctrl-o`: back
 - `Ctrl-i`: forward
+- `Ctrl-g`: cancel active popup via JetBrains `EditorEscape`
 
 The same commands are also mapped with a backslash prefix, such as `\w`, `\p`, and `\e`.
 
