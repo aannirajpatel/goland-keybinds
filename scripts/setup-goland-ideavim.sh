@@ -27,6 +27,7 @@ cat > "$snippet_path" <<'EOF'
 " GoLand + IdeaVim cross-platform mappings.
 " Use nmap with <Action>(...) because IdeaVim does not support <Action> with noremap.
 let mapleader = " "
+set clipboard+=unnamedplus
 
 " Semantic navigation
 nmap gd <Action>(GotoDeclaration)

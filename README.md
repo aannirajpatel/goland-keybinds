@@ -2,7 +2,7 @@
 
 Small GoLand + IdeaVim setup for people switching between Windows and macOS.
 
-It keeps OS-level shortcuts native, then puts GoLand code navigation behind portable IdeaVim mappings. The scripts map both `<leader>` and explicit `<Space>` forms so `Space w` works even if leader expansion is not behaving in a local IdeaVim build.
+It keeps OS-level shortcuts native, then puts GoLand code navigation behind portable IdeaVim mappings. The scripts map both `<leader>` and explicit `<Space>` forms so `Space w` works even if leader expansion is not behaving in a local IdeaVim build. Normal Vim yank/paste commands use the OS clipboard via `clipboard+=unnamedplus`.
 
 - `Space s`: file structure
 - `Space h`: type hierarchy
